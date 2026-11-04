@@ -26,7 +26,10 @@ Here are the commands to install the required packages depending on your Linux d
    ```bash
    sudo add-apt-repository universe && sudo apt update && sudo apt install -y hyprland hyprpaper
    ```
-
+   **Install Quickshell**
+   ```bash
+   sudo add-apt-repository ppa:avengemedia/danklinux -y
+   ```
 ### 🏔️ Arch Linux (pacman)
 Run this command to sync repositories and install the base tools:
 ```bash
@@ -39,8 +42,30 @@ If you are on Arch and use the AUR, use this command for external packages:
 yay -S codium elephant-desktopapplications-bin elephant-providerlist-bin elephant-calc-bin elephant-files-bin elephant-windows-bin
 ```
 
-### 🎩 Fedora (dnf)
-Run this command to update and install the packages:
+## 🎩 Fedora (dnf) Installation
+
+Fedora provides modern, bleeding-edge packages natively. To install the core tools along with the Wayland ecosystem components, run these setup steps:
+
+### 1. Enable Third-Party Repositories (Copr & VSCodium)
+Because VSCodium and Quickshell are not in the default Fedora repositories, you need to enable their external package registries first:
+
 ```bash
-sudo dnf upgrade --refresh -y && sudo dnf install -y git curl neovim tmux htop
+# Add the VSCodium Repository
+sudo rpm --import https://gitlab.com
+sudo sh -c 'echo -e "[vscodium]\nname=vscodium\nbaseurl=https://vscodium.com\nenabled=1\ngpgcheck=1\ngpgkey=https://gitlab.com" > /etc/yum.repos.d/vscodium.repo'
+
+# Enable the Copr repository for Quickshell
+sudo dnf copr enable -y alternateved/quickshell
 ```
+
+### 2. Install All Core Applications & Wayland Desktop Components
+Run this single terminal string to fully upgrade the package tracker and install everything natively via `dnf`:
+
+```bash
+sudo dnf upgrade --refresh -y && \
+sudo dnf install -y firefox thunar wezterm hyprland hyprpaper quickshell git curl codium
+```
+
+### 3. Note for Elephant Plugins (`elephant-...`)
+* The `elephant-*-bin` applications are wrapped explicitly for Arch Linux's packaging ecosystem. 
+* To run the Elephant plugin backend (for launchers like `walker`) on Fedora, you will need to install the Go development kit (`sudo dnf install golang`) and compile the source code directly from the [Elephant Upstream Git](https://github.com) repository.
