@@ -22,6 +22,10 @@ Here are the commands to install the required packages depending on your Linux d
    echo 'deb [ signed-by=/usr/share/keyrings/vscodium.gpg ] https://vscodium.com vscodium main' | sudo tee /etc/apt/sources.list.d/vscodium.list
    sudo apt update && sudo apt install codium
    ```
+   **Hyprland and the hyprecosystem is not intended for Ubuntu, Debian, or Mint**
+   ```bash
+   sudo add-apt-repository universe && sudo apt update && sudo apt install -y hyprland hyprpaper
+   ```
 
 ### 🏔️ Arch Linux (pacman)
 Run this command to sync repositories and install the base tools:
