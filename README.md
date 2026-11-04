@@ -29,6 +29,7 @@ Here are the commands to install the required packages depending on your Linux d
    **Install Quickshell**
    ```bash
    sudo add-apt-repository ppa:avengemedia/danklinux -y
+   sudo apt update && sudo apt install -y quickshell
    ```
 ### 🏔️ Arch Linux (pacman)
 Run this command to sync repositories and install the base tools:
