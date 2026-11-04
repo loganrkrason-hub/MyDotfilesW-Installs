@@ -3,15 +3,30 @@
 Here are the commands to install the required packages depending on your Linux distribution.
 
 ### 📦 Ubuntu / Debian / Mint (apt)
-Run the following command to update your system and install the tools:
-```bash
-sudo apt update && sudo apt install -y git curl neovim tmux htop
-```
+
+1. **Install Core & Desktop Packages:**
+   ```bash
+   sudo apt update && sudo apt upgrade -y && sudo apt install -y firefox thunar git curl
+   ```
+
+2. **Install WezTerm:**
+   ```bash
+   curl -fsSL https://fury.io | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
+   echo "deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://fury.io * *" | sudo tee /etc/apt/sources.list.d/wezterm.list
+   sudo apt update && sudo apt install wezterm
+   ```
+
+3. **Install VSCodium:**
+   ```bash
+   wget -qO - https://gitlab.com | gpg --dearmor | sudo tee /usr/share/keyrings/vscodium.gpg > /dev/null
+   echo 'deb [ signed-by=/usr/share/keyrings/vscodium.gpg ] https://vscodium.com vscodium main' | sudo tee /etc/apt/sources.list.d/vscodium.list
+   sudo apt update && sudo apt install codium
+   ```
 
 ### 🏔️ Arch Linux (pacman)
 Run this command to sync repositories and install the base tools:
 ```bash
-sudo pacman -Syu firefox Thunar wezterm hyprland hyprpaper quickshell 
+sudo pacman --needed -Syu firefox Thunar wezterm hyprland hyprpaper quickshell git curl
 ```
 
 ### ⚡ Arch AUR Packages (yay)
