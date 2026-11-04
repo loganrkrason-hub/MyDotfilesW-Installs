@@ -22,11 +22,11 @@ Here are the commands to install the required packages depending on your Linux d
    echo 'deb [ signed-by=/usr/share/keyrings/vscodium.gpg ] https://vscodium.com vscodium main' | sudo tee /etc/apt/sources.list.d/vscodium.list
    sudo apt update && sudo apt install codium
    ```
-   **Hyprland and the hyprecosystem is not intended for Ubuntu, Debian, or Mint**
+4.  **Hyprland and the hyprecosystem is not intended for Ubuntu, Debian, or Mint**
    ```bash
    sudo add-apt-repository universe && sudo apt update && sudo apt install -y hyprland hyprpaper
    ```
-   **Install Quickshell**
+5.  **Install Quickshell**
    ```bash
    sudo add-apt-repository ppa:avengemedia/danklinux -y
    sudo apt update && sudo apt install -y quickshell
