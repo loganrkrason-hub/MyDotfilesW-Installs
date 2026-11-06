@@ -42,7 +42,11 @@ If you are on Arch and use the AUR, use this command for external packages:
 ```bash
 yay -S codium elephant-desktopapplications-bin elephant-providerlist-bin elephant-calc-bin elephant-files-bin elephant-windows-bin
 ```
-
+if you use paru use this:
+```bash
+paru -S codium elephant-desktopapplications-bin elephant-providerlist-bin elephant-calc-bin elephant-files-bin elephant-windows-bin
+```
+if you dont have yay or paru, you get yay
 ## 🎩 Fedora (dnf) Installation
 
 Fedora provides modern, bleeding-edge packages natively. To install the core tools along with the Wayland ecosystem components, run these setup steps:
