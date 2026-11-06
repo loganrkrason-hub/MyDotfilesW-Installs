@@ -6,7 +6,7 @@ Here are the commands to install the required packages depending on your Linux d
 
 1. **Install Core & Desktop Packages:**
    ```bash
-   sudo apt update && sudo apt upgrade -y && sudo apt install -y firefox thunar git curl neovim
+   sudo apt update && sudo apt upgrade -y && sudo apt install -y firefox thunar git curl neovim fastfetch
    ```
 
 2. **Install WezTerm:**
@@ -34,7 +34,7 @@ Here are the commands to install the required packages depending on your Linux d
 ### 🏔️ Arch Linux (pacman)
 Run this command to sync repositories and install the base tools:
 ```bash
-sudo pacman --needed -Syu firefox thunar wezterm hyprland hyprpaper quickshell git curl neovim
+sudo pacman --needed -Syu firefox thunar wezterm hyprland hyprpaper quickshell git curl neovim fastfetch
 ```
 
 ### ⚡ Arch AUR Packages (yay)
@@ -74,7 +74,7 @@ Run this single terminal string to fully upgrade the package tracker and install
 
 ```bash
 sudo dnf upgrade --refresh -y && \
-sudo dnf install -y firefox thunar wezterm hyprland hyprpaper quickshell git curl codium neovim
+sudo dnf install -y firefox thunar wezterm hyprland hyprpaper quickshell git curl codium neovim fastfetch
 ```
 
 ### 3. Note for Elephant Plugins (`elephant-...`)
