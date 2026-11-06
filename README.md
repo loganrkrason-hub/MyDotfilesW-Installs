@@ -46,7 +46,13 @@ if you use paru use this:
 ```bash
 paru -S codium elephant-desktopapplications-bin elephant-providerlist-bin elephant-calc-bin elephant-files-bin elephant-windows-bin
 ```
-if you dont have yay or paru, you get yay
+if you dont have yay or paru, you get yay. To do that run:
+```bash
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
 ## 🎩 Fedora (dnf) Installation
 
 Fedora provides modern, bleeding-edge packages natively. To install the core tools along with the Wayland ecosystem components, run these setup steps:
