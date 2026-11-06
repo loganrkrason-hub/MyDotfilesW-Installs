@@ -34,7 +34,7 @@ Here are the commands to install the required packages depending on your Linux d
 ### 🏔️ Arch Linux (pacman)
 Run this command to sync repositories and install the base tools:
 ```bash
-sudo pacman --needed -Syu firefox Thunar wezterm hyprland hyprpaper quickshell git curl neovim
+sudo pacman --needed -Syu firefox thunar wezterm hyprland hyprpaper quickshell git curl neovim
 ```
 
 ### ⚡ Arch AUR Packages (yay)
