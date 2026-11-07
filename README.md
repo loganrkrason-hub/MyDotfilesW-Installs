@@ -40,7 +40,7 @@ sudo pacman --needed -Syu firefox thunar wezterm hyprland hyprpaper quickshell g
 ### ⚡ Arch AUR Packages (yay)
 If you are on Arch and use the AUR, use this command for external packages:
 ```bash
-yay -S codium elephant-desktopapplications-bin elephant-providerlist-bin elephant-calc-bin elephant-files-bin elephant-windows-bin
+yay -S codium elephant-desktopapplications-bin elephant-providerlist-bin elephant-calc-bin elephant-files-bin elephant-windows-bin walker
 ```
 if you use paru use this:
 ```bash
@@ -63,7 +63,8 @@ Because VSCodium and Quickshell are not in the default Fedora repositories, you 
 ```bash
 # Add the VSCodium Repository
 sudo rpm --import https://gitlab.com
-sudo sh -c 'echo -e "[vscodium]\nname=vscodium\nbaseurl=https://vscodium.com\nenabled=1\ngpgcheck=1\ngpgkey=https://gitlab.com" > /etc/yum.repos.d/vscodium.repo'
+sudo sh -c 'echo -e "[vscodium]\nname=vscodium\nbaseurl=https://vscodium.com\nenabled=1\ngpgcheck=1\ngpgkey=https://gitlab.com" > /etc/yum.repos.d/vscodium.repo
+copr enable errornointernet/walker'
 
 # Enable the Copr repository for Quickshell
 sudo dnf copr enable -y alternateved/quickshell
@@ -74,7 +75,7 @@ Run this single terminal string to fully upgrade the package tracker and install
 
 ```bash
 sudo dnf upgrade --refresh -y && \
-sudo dnf install -y firefox thunar wezterm hyprland hyprpaper quickshell git curl codium neovim fastfetch
+sudo dnf install -y firefox thunar wezterm hyprland hyprpaper quickshell git curl codium neovim fastfetch walker elephant
 ```
 
 ### 3. Note for Elephant Plugins (`elephant-...`)
