@@ -6,7 +6,7 @@ Here are the commands to install the required packages depending on your Linux d
 
 1. **Install Core & Desktop Packages:**
    ```bash
-   sudo apt update && sudo apt upgrade -y && sudo apt install -y firefox thunar git curl neovim fastfetch
+   sudo apt update && sudo apt upgrade -y && sudo apt install -y firefox thunar git curl neovim fastfetch fonts-noto-color-emoji
    ```
 
 2. **Install WezTerm:**
@@ -34,7 +34,7 @@ Here are the commands to install the required packages depending on your Linux d
 ### 🏔️ Arch Linux (pacman)
 Run this command to sync repositories and install the base tools:
 ```bash
-sudo pacman --needed -Syu firefox thunar wezterm hyprland hyprpaper quickshell git curl neovim fastfetch
+sudo pacman --needed -Syu firefox thunar wezterm hyprland hyprpaper quickshell git curl neovim fastfetch noto-fonts-emoji
 ```
 
 ### ⚡ Arch AUR Packages (yay)
@@ -75,7 +75,7 @@ Run this single terminal string to fully upgrade the package tracker and install
 
 ```bash
 sudo dnf upgrade --refresh -y && \
-sudo dnf install -y firefox thunar wezterm hyprland hyprpaper quickshell git curl codium neovim fastfetch walker elephant
+sudo dnf install -y firefox thunar wezterm hyprland hyprpaper quickshell git curl codium neovim fastfetch walker elephant google-noto-emoji-fonts
 ```
 
 ### 3. Note for Elephant Plugins (`elephant-...`)
