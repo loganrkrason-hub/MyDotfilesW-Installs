@@ -24,7 +24,7 @@ Here are the commands to install the required packages depending on your Linux d
    ```
 4.  **Hyprland and the hyprecosystem is not intended for Ubuntu, Debian, or Mint**
    ```bash
-   sudo add-apt-repository universe && sudo apt update && sudo apt install -y hyprland hyprpaper
+   sudo add-apt-repository universe && sudo apt update && sudo apt install -y hyprland hyprpaper hyprlock hypridle
    ```
 5.  **Install Quickshell**
    ```bash
@@ -34,7 +34,7 @@ Here are the commands to install the required packages depending on your Linux d
 ### 🏔️ Arch Linux (pacman)
 Run this command to sync repositories and install the base tools:
 ```bash
-sudo pacman --needed -Syu firefox thunar wezterm hyprland hyprpaper quickshell git curl neovim fastfetch noto-fonts-emoji
+sudo pacman --needed -Syu firefox thunar wezterm hyprland hyprpaper quickshell git curl neovim fastfetch noto-fonts-emoji hyprlock hypridle
 ```
 
 ### ⚡ Arch AUR Packages (yay)
@@ -75,7 +75,7 @@ Run this single terminal string to fully upgrade the package tracker and install
 
 ```bash
 sudo dnf upgrade --refresh -y && \
-sudo dnf install -y firefox thunar wezterm hyprland hyprpaper quickshell git curl codium neovim fastfetch walker elephant google-noto-emoji-fonts
+sudo dnf install -y firefox thunar wezterm hyprland hyprpaper quickshell git curl codium neovim fastfetch walker elephant google-noto-emoji-fonts hyprlock hypridle
 ```
 
 ### 3. Note for Elephant Plugins (`elephant-...`)
