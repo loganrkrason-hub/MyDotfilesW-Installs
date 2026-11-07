@@ -40,7 +40,7 @@ sudo pacman --needed -Syu firefox thunar wezterm hyprland hyprpaper quickshell g
 ### ⚡ Arch AUR Packages (yay)
 If you are on Arch and use the AUR, use this command for external packages:
 ```bash
-yay -S codium elephant-desktopapplications-bin elephant-providerlist-bin elephant-calc-bin elephant-files-bin elephant-windows-bin walker
+yay -S codium elephant-desktopapplications-bin elephant-providerlist-bin elephant-calc-bin elephant-files-bin elephant-windows-bin walker elephant-symbols
 ```
 if you use paru use this:
 ```bash
